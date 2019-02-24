@@ -1,0 +1,81 @@
+* {
+  
+  box-sizing: border-box;
+  
+}
+
+h1, h4{
+  text-align: center;
+  font-family: 'Slabo 27px', serif;
+  background-color: darkslategray;
+  color: white;
+  margin: 0;
+}
+
+.heading{
+  
+}
+
+main {
+  display: flex;
+  justify-content: center; 
+}
+
+form {
+  display: flex;
+  border: 16px solid darkslategray;
+  border-radius: 4px;
+  background-color: #716e6e;
+  font-size: 22px;
+  width: 100%;
+  margin: 5px 25%;
+  
+}
+
+#selectTimesContainer{
+ 
+  flex-direction: column;
+  box-shadow: 6px 2px 24px grey;
+  width: 98%;
+}
+
+.daySelectorContainer{
+  display: flex;
+  justify-content: space-between; 
+  padding: 10px;
+  align-items: center;
+  background-color: white;
+  border: 4px solid #716e6e;
+  border-radius: 4px;
+  padding: 0 10px 0 22px;
+  
+}
+
+.daySelectorContainer p{
+  margin: 8px; 
+}
+
+.contact_info{
+  display: flex;
+  padding: 10px;
+  background-color: #aaa;
+  flex-direction: column;
+  border: 4px solid #716e6e;
+}
+
+.heading{
+  background-color: #000;
+  color: white;
+  border: 4px solid #716e6e;
+
+}
+
+#submit_button{
+  
+  background: #1a3ebb;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 3px;
+  color: #eee;
+  border: 4px solid #716e6e;
+}
