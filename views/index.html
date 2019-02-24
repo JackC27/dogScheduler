@@ -1,0 +1,183 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dog Squad</title>
+    <meta name="description" content="Connect Dogs with People">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div class="header">    
+      <h1>
+         Dog Squad
+      </h1>
+      <h4>
+        Scheduling Form
+      </h4>
+    </div>
+    <main>
+    
+      <form action="/create_schedule" method="post" id="selectTimesContainer">
+        <div class="contact_info">
+          <label for="owner">Owner Name:</label><input type="text" name="owner" id="data"/>
+          <label for="phone">Phone #:</label><input type="text" name="phone" id="phone"/>
+          <label for="dog_name">Dog Name:</label><input type="text" name="dog_name" id="dog_name"/>
+        </div>
+        <div class="daySelectorContainer heading">
+          <p>Day</p>  
+          <p>Optimal time</p>
+        </div>
+        <div class="daySelectorContainer">
+          <p>Monday</p>
+          <select name="monday" id="monday">
+          <option value="N/A">N/A</option>
+          <option value="10:00 AM">10:00 AM</option>
+          <option value="10:30 AM">10:30 AM</option>
+          <option value="11:00 AM">11:00 AM</option>
+          <option value="11:30 AM">11:30 AM</option>
+          <option value="12:00 PM">12:00 PM</option>
+          <option value="12:30 PM">12:30 PM</option>
+          <option value="1:00 PM">1:00 PM</option>
+          <option value="1:30 PM">1:30 PM</option>
+          <option value="2:00 PM">2:00 PM</option>
+          <option value="2:30 PM">2:30 PM</option>
+          <option value="3:00 PM">3:00 PM</option>
+          <option value="3:30 PM">3:30 PM</option>
+
+          </select>
+        </div>
+        <div class="daySelectorContainer">
+          <p>Tuesday</p>
+          <select name="tuesday" id="tuesday">
+          <option value="N/A">N/A</option>
+            <option value="10:00 AM">10:00 AM</option>
+            <option value="10:30 AM">10:30 AM</option>
+            <option value="11:00 AM">11:00 AM</option>
+            <option value="11:30 AM">11:30 AM</option>
+            <option value="12:00 PM">12:00 PM</option>
+            <option value="12:30 PM">12:30 PM</option>
+            <option value="1:00 PM">1:00 PM</option>
+            <option value="1:30 PM">1:30 PM</option>
+            <option value="2:00 PM">2:00 PM</option>
+            <option value="2:30 PM">2:30 PM</option>
+            <option value="3:00 PM">3:00 PM</option>
+            <option value="3:30 PM">3:30 PM</option>
+
+        </select>          
+        </div>
+        <div class="daySelectorContainer">
+          <p>Wednesday</p>
+          <select name="wednesday" id="wednesday">
+          <option value="N/A">N/A</option>
+            <option value="10:00 AM">10:00 AM</option>
+            <option value="10:30 AM">10:30 AM</option>
+            <option value="11:00 AM">11:00 AM</option>
+            <option value="11:30 AM">11:30 AM</option>
+            <option value="12:00 PM">12:00 PM</option>
+            <option value="12:30 PM">12:30 PM</option>
+            <option value="1:00 PM">1:00 PM</option>
+            <option value="1:30 PM">1:30 PM</option>
+            <option value="2:00 PM">2:00 PM</option>
+            <option value="2:30 PM">2:30 PM</option>
+            <option value="3:00 PM">3:00 PM</option>
+            <option value="3:30 PM">3:30 PM</option>
+
+          </select>
+        </div>
+        <div class="daySelectorContainer">
+          <p>Thursday</p>
+          <select name="thursday" id="thursday">
+          <option value="N/A">N/A</option>
+            <option value="10:00 AM">10:00 AM</option>
+            <option value="10:30 AM">10:30 AM</option>
+            <option value="11:00 AM">11:00 AM</option>
+            <option value="11:30 AM">11:30 AM</option>
+            <option value="12:00 PM">12:00 PM</option>
+            <option value="12:30 PM">12:30 PM</option>
+            <option value="1:00 PM">1:00 PM</option>
+            <option value="1:30 PM">1:30 PM</option>
+            <option value="2:00 PM">2:00 PM</option>
+            <option value="2:30 PM">2:30 PM</option>
+            <option value="3:00 PM">3:00 PM</option>
+            <option value="3:30 PM">3:30 PM</option>
+
+          </select>
+        </div>
+        <div class="daySelectorContainer">
+          <p>Friday</p>
+          <select name="friday" id="friday">
+          <option value="N/A">N/A</option>
+            <option value="10:00 AM">10:00 AM</option>
+            <option value="10:30 AM">10:30 AM</option>
+            <option value="11:00 AM">11:00 AM</option>
+            <option value="11:30 AM">11:30 AM</option>
+            <option value="12:00 PM">12:00 PM</option>
+            <option value="12:30 PM">12:30 PM</option>
+            <option value="1:00 PM">1:00 PM</option>
+            <option value="1:30 PM">1:30 PM</option>
+            <option value="2:00 PM">2:00 PM</option>
+            <option value="2:30 PM">2:30 PM</option>
+            <option value="3:00 PM">3:00 PM</option>
+            <option value="3:30 PM">3:30 PM</option>
+
+          </select>
+        </div>
+        <div class="daySelectorContainer">
+        <p>Saturday - Call for Unique Circumstances</p></div>
+        <div class="daySelectorContainer">
+        <p>Sunday</p>
+        <select name="sunday" id="sunday">
+          <option value="N/A">N/A</option>
+          <option value="10:00 AM">10:00 AM</option>
+          <option value="10:30 AM">10:30 AM</option>
+          <option value="11:00 AM">11:00 AM</option>
+          <option value="11:30 AM">11:30 AM</option>
+          <option value="12:00 PM">12:00 PM</option>
+          <option value="12:30 PM">12:30 PM</option>
+          <option value="1:00 PM">1:00 PM</option>
+          <option value="1:30 PM">1:30 PM</option>
+          <option value="2:00 PM">2:00 PM</option>
+          <option value="2:30 PM">2:30 PM</option>
+          <option value="3:00 PM">3:00 PM</option>
+          <option value="3:30 PM">3:30 PM</option>
+
+        </select>
+        </div>
+        <input id="submit_button" type="submit" value="Submit">
+      </form>
+    
+    </main>
+    
+    <script>
+    
+      fetch("/create_schedule", 
+        {
+          method: 'POST', // or 'PUT'
+          body: JSON.stringify(data), // data can be `string` or {object}!
+          headers:{
+            'Content-Type': 'application/json'
+        }
+      })
+      .then(res => res.json())
+      .then(response => {
+        console.log('Success:', JSON.stringify(response))
+      })
+      .catch(error => console.error('Error:', error));
+    
+    </script>
+    <script src="/client.js"></script>
+  </body>
+</html>
